@@ -52,14 +52,13 @@ import java.io.IOException;
 @Service
 public class CaseServiceImpl implements CaseService {
 
-    private CaseEntity caseEntity;
-
     @Autowired
     private CaseRepository caseRepository;
 
 
     @Override
     public String createCase(CaseVo caseVo) {
+        CaseEntity caseEntity=new CaseEntity();
         caseEntity.setCompanyName(caseVo.getCompanyName());
         caseEntity.setAccountNumber(caseVo.getAccountNumber());
         caseEntity.setRelatedParty(caseVo.getRelatedParty());

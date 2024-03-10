@@ -24,7 +24,7 @@ public class CaseControllerImpl implements CaseController {
             @RequestParam String companyName,
             @RequestParam String accountNumber,
             @RequestParam String relatedParty,
-            @RequestParam("bankStatement") MultipartFile bankStatementFile,
+            @RequestParam("bankStatementFile") MultipartFile bankStatementFile,
             @RequestParam String metadata,
             @RequestParam String companyAddress
     ) throws IOException{
