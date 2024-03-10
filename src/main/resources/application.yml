@@ -12,7 +12,7 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:postgresql://localhost:5432/bridgeup_fiscus
+    url: jdbc:postgresql://localhost:5432/fiscus
     username: postgres
     password: 1213123
 server:
